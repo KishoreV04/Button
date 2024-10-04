@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Button Set Reset</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        button {
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #red {
+            background-color: #ff4d4d;
+            color: white;
+        }
+
+        #red:hover {
+            background-color: #ff3333;
+        }
+
+        #blue {
+            background-color: #4d79ff;
+            color: white;
+        }
+
+        #blue:hover {
+            background-color: #3366ff;
+        }
+
+        #green {
+            background-color: #4dff88;
+            color: white;
+        }
+
+        #green:hover {
+            background-color: #33ff77;
+        }
+
+        #reset {
+            background-color: #f4f4f9;
+            color: black;
+            border: 1px solid #ccc;
+        }
+
+        #reset:hover {
+            background-color: #e6e6e6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click any one of the Buttons to Change the Colour. Click the Reset Button to Reset the Colors</h1>
+    <button id="red" onclick="changeRed()"> Button 1</button> <br>
+    <button id="blue" onclick="changeBlue()"> Button 2</button> <br>
+    <button id="green" onclick="changeGreen()"> Button 3</button> <br>
+    <button id="reset" onclick="reset()"> RESET </button>
+    <script src="button.js"></script>
+</body>
+</html>
